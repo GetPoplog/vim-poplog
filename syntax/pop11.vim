@@ -9,12 +9,13 @@ endif
 
 " Definition keywords
 syn keyword pop11Define define enddefine
+syn keyword pop11Define procedure endprocedure
 hi def link pop11Define Statement
 
 syn keyword pop11Statement return
 hi def link pop11Statement Statement
 
-syn keyword pop11LanguageKeywords vars lvars then
+syn keyword pop11LanguageKeywords vars lvars lconstant constant then
 syn keyword pop11LanguageKeywords uses
 hi def link pop11LanguageKeywords Statement
 
@@ -35,14 +36,31 @@ syn region pop11CommentCStyle start=+/\*+ end=+\*/+
 hi link pop11CommentSemiColons Comment
 hi link pop11CommentCStyle Comment
 
+syntax keyword pop11BuiltinFunction add alladd allpresent allremove appdata applist appproperty
+syntax keyword pop11BuiltinFunction arrayvector arrayvector_bounds atom back atom back boundslist
+syntax keyword pop11BuiltinFunction caller chain chainfrom chainto charin charout class_print
+syntax keyword pop11BuiltinFunction clearstack compile conskey conspair consproc consprocto consword
+syntax keyword pop11BuiltinFunction datakey datalist dataword delete dest destpair discin discout
+syntax keyword pop11BuiltinFunction erase erasenum exitfrom exitto explode fast_back fast_front
+syntax keyword pop11BuiltinFunction flush front frozval gensym
+
+syntax keyword pop11BuiltinFunction substring newmapping length isalphacode isuppercode isnumbercode string warning locchar hd tl
+syntax keyword pop11BuiltinFunction syssearchpath sys_fname mishap sys_fname_name sys_file_match
+hi link pop11BuiltinFunction Function
+
 
 syn keyword pop11Repeat for endfor
+syn keyword pop11Repeat foreach endforeach
+syn keyword pop11Repeat forevery endforevery
+syn keyword pop11Repeat repeat endrepeat
 syn keyword pop11Repeat until enduntil
 syn keyword pop11Repeat switchon case endswitchon
 hi def link pop11Repeat Repeat
 
-syn keyword pop11PreConditional #_IF #_ELSE #_ENDIF
-hi def link pop11PreConditional PreProc
+syn match pop11PreConditional display "^#_\(IF|ELSE\)"
+syn match pop11PreConditionalMatch display "^#_ENDIF"
+hi def link pop11PreConditionalMatch pop11PreConditional
+hi def link pop11PreConditional PreCondit
 
 " Import keywords
 
