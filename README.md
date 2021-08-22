@@ -3,7 +3,7 @@
 **WARNING: WORK IN PROGRESS**
 
 This project adds support for the [`pop11` language](https://getpoplog.github.io/)
-to the Vim editor. It handles syntax highlighting for `*.pop11` files.
+to the Vim editor. It handles syntax highlighting for `*.p` files.
 
 ## Installation
 We recommend you use [Plug](https://github.com/junegunn/vim-plug) or another vim
