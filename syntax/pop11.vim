@@ -81,6 +81,13 @@ hi link pop11BuiltinFunction Function
 syntax keyword pop11Var it database them
 hi link pop11Var Identifier
 
+syn keyword pop11Include include
+hi link pop11Include Include
+
+syn region pop11PreIncluded display contained start=+'+ skip=+\\+ end=+'+
+syn match pop11PreInclude display "^\s*#_INCLUDE"  contains=pop11PreIncluded
+hi link pop11PreInclude Include
+
 syn match pop11PreConditional display "^#_\(IF|ELSE\)"
 syn match pop11PreConditionalMatch display "^#_ENDIF"
 hi def link pop11PreConditionalMatch pop11PreConditional
