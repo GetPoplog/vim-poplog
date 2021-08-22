@@ -11,6 +11,7 @@ if exists("b:current_syntax")
 endif
 
 syn keyword pop11Operator and or
+syn keyword pop11Operator nonop nonmac nonsyntax
 hi def link pop11Operator Operator
 
 " Definition keywords
@@ -23,8 +24,10 @@ syn keyword pop11Statement goto
 syn keyword pop11Statement quitloop quitif quitunless nextloop
 hi def link pop11Statement Statement
 
-syn keyword pop11LanguageKeywords vars lvars lconstant constant then
+syn keyword pop11LanguageKeywords global vars lvars lconstant constant
 syn keyword pop11LanguageKeywords uses
+syn keyword pop11LanguageKeywords syntax
+syn keyword pop11LanguageKeywords macro
 hi def link pop11LanguageKeywords Statement
 
 syn keyword pop11Label case notcase andcase orcase andnotcase ornotcase
@@ -35,9 +38,13 @@ syn keyword pop11Conditional unless endunless
 syn keyword pop11Conditional switchon endswitchon
 hi def link pop11Conditional Conditional
 
-syn keyword pop11Repeat while until for foreach forevery forever
-syn keyword pop11Repeat endwhile enduntil endfor endforeach endforevery endforever
-syn keyword pop11Repeat do in on from by to times step
+syn keyword pop11Repeat for endfor
+syn keyword pop11Repeat foreach endforeach
+syn keyword pop11Repeat forevery endforevery
+syn keyword pop11Repeat while endwhile
+syn keyword pop11Repeat until enduntil
+syn keyword pop11Repeat repeat endrepeat
+syn keyword pop11Repeat forever do in on from by to till times step
 hi def link pop11Repeat Repeat
 
 syn keyword pop11Assignment -> ->>
@@ -61,6 +68,7 @@ syntax keyword pop11BuiltinFunction clearstack compile conskey conspair consproc
 syntax keyword pop11BuiltinFunction datakey datalist dataword delete dest destpair discin discout
 syntax keyword pop11BuiltinFunction erase erasenum exitfrom exitto explode fast_back fast_front
 syntax keyword pop11BuiltinFunction flush front frozval gensym
+syntax keyword pop11BuiltinFunction pr ppr spr
 
 syntax keyword pop11BuiltinFunction substring newmapping length isalphacode isuppercode isnumbercode string warning locchar hd tl
 syntax keyword pop11BuiltinFunction syssearchpath sys_fname mishap sys_fname_name sys_file_match
@@ -68,14 +76,6 @@ hi link pop11BuiltinFunction Function
 
 syntax keyword pop11Var it database them
 hi link pop11Var Identifier
-
-
-syn keyword pop11Repeat for endfor
-syn keyword pop11Repeat foreach endforeach
-syn keyword pop11Repeat forevery endforevery
-syn keyword pop11Repeat repeat endrepeat
-syn keyword pop11Repeat until enduntil
-hi def link pop11Repeat Repeat
 
 syn match pop11PreConditional display "^#_\(IF|ELSE\)"
 syn match pop11PreConditionalMatch display "^#_ENDIF"

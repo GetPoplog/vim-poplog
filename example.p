@@ -29,6 +29,17 @@ else
     pr('something else');
 endunless;
 
+define laugh();
+    lvars x = 2;
+    l: ppr("ho");
+    x - 1 -> x;
+    if x > 0 then
+        goto l;
+    endif;
+enddefine;
+laugh();
+
+
 if x and y then
     pr('x and y');
 elseif x or y then
@@ -68,6 +79,7 @@ lvars i;
 for i in [% 1,2,3,4 %] do
     i =>
 endfor;
+for i on [a b c] do x => endfor;
 for i from 0 by 2 to 10 do i => endfor;
 for i by 2 to 10 do i => endfor;
 for i to 10 do i => endfor;

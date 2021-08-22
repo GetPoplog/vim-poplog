@@ -31,18 +31,18 @@ Once a railroad diagram has been
   - [ ]  `->>`
   - [ ]  `-->`
 - [ ] Variable
-  - [ ] `nonop`
-  - [ ] `nonmac`
-  - [ ] `nonsyntax`
-- [ ] Declaration
-  - [ ] `global`
-  - [ ] `lvars`
-  - [ ] `vars`
-  - [ ] `constant`
-  - [ ] `lconstant`
-- [ ] Varslist
-  - [ ] `macro`
-  - [ ] `syntax`
+  - [x] `nonop`
+  - [x] `nonmac`
+  - [x] `nonsyntax`
+- [x] Declaration
+  - [x] `global`
+  - [x] `lvars`
+  - [x] `vars`
+  - [x] `constant`
+  - [x] `lconstant`
+- [x] Varslist
+  - [x] `macro`
+  - [x] `syntax`
 - [ ] Sequence
   - [ ] `,`
   - [ ] `;`
@@ -64,29 +64,31 @@ Once a railroad diagram has been
     - [ ] `=`
     - [ ] `==`
 - [ ] Label: `<word>:`
-- [ ] Jump: `goto <word>`
-- [ ] Iterative (i)
-  - [ ] `for`
-  - [ ] `step`
-  - [ ] `till`
-  - [ ] `do`
-  - [ ] `endfor`
-- [ ] Iterative (ii)
-  - [ ] `while`
-  - [ ] `until`
-  - [ ] `for`
-  - [ ] `in`
-  - [ ] `on`
-  - [ ] `from`
-  - [ ] `by`
-  - [ ] `to`
-  - [ ] `foreach`
-  - [ ] `forevery`
-  - [ ] `in`
-  - [ ] `repeat`
-  - [ ] `times`
-  - [ ] `forever`
-- [ ] Conditional
+- [x] Jump: `goto <word>`
+- [x] Iterative (i)
+  - [x] `for`
+  - [x] `step`
+  - [x] `till`
+  - [x] `do`
+  - [x] `endfor`
+- [x] Iterative (ii)
+  - [x] `while`
+  - [x] `until`
+  - [x] `for`
+  - [x] `in`
+  - [x] `on`
+  - [x] `from`
+  - [x] `by`
+  - [x] `to`
+  - [x] `foreach`
+  - [x] `endforeach`
+  - [x] `forevery`
+  - [x] `endforevery`
+  - [x] `repeat`
+  - [x] `endrepeat`
+  - [x] `times`
+  - [x] `forever`
+- [x] Conditional
   - [x] `if`
   - [x] `unless`
   - [x] `elseif`
