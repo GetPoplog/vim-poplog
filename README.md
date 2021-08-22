@@ -87,16 +87,16 @@ Once a railroad diagram has been
   - [ ] `times`
   - [ ] `forever`
 - [ ] Conditional
-  - [ ] `if`
-  - [ ] `unless`
-  - [ ] `elseif`
-  - [ ] `elseunless`
-  - [ ] `else`
-  - [ ] `then`
-  - [ ] `endif`
-  - [ ] `endunless`
-- [ ] Boolean expression
-  - [ ] `and`
-  - [ ] `or`
+  - [x] `if`
+  - [x] `unless`
+  - [x] `elseif`
+  - [x] `elseunless`
+  - [x] `else`
+  - [x] `then`
+  - [x] `endif`
+  - [x] `endunless`
+- [x] Boolean expression
+  - [x] `and`
+  - [x] `or`
 - [ ] Operator expression
 - [ ] Function application
