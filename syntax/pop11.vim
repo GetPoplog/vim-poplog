@@ -19,6 +19,7 @@ syn keyword pop11Define define enddefine
 syn keyword pop11Define procedure endprocedure
 hi def link pop11Define Statement
 
+syn keyword pop11Statement section endsection
 syn keyword pop11Statement return returnif returnunless
 syn keyword pop11Statement goto
 syn keyword pop11Statement quitloop quitif quitunless nextloop
