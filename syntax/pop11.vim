@@ -25,6 +25,9 @@ syn keyword pop11Statement goto
 syn keyword pop11Statement quitloop quitif quitunless nextloop
 hi def link pop11Statement Statement
 
+syn keyword pop11Booleans false true
+hi def link pop11Booleans Boolean
+
 syn keyword pop11LanguageKeywords global vars lvars lconstant constant
 syn keyword pop11LanguageKeywords uses
 syn keyword pop11LanguageKeywords syntax
