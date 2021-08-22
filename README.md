@@ -102,3 +102,10 @@ Once a railroad diagram has been
   - [x] `or`
 - [ ] Operator expression
 - [ ] Function application
+
+## Further reading
+
+- See `ref syntax` for a list of syntax words in pop11.
+- See [Your own syntax highlighted](https://vim.help/44-your-own-syntax-highlighted) 
+  for an excellent guide on writing vim syntax files.
+
